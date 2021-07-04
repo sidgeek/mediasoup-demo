@@ -16,6 +16,7 @@ node {
         dir('mediasoup') {
             git branch: 'v3',
                 url: 'https://github.com/sidgeek/mediasoup-demo.git';
+                credentialsId: 'my_jenkins_private',
             // ARES-1285 Create a version file in jenkins pipeline
             rev_no = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
         }
