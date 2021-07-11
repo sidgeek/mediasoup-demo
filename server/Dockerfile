@@ -15,4 +15,4 @@ COPY config.js .
 COPY lib lib
 COPY certs certs
 
-CMD ["node", "/service/server.js"]
+CMD ["node", "/service/server/index.js"]
