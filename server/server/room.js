@@ -1,5 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const Logger = require("../lib/Logger");
+
+const logger = new Logger();
 
 // Map of Room instances indexed by roomId.
 // @type {Map<Number, Room>}
