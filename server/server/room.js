@@ -256,5 +256,10 @@ async function createExpressApp() {
   });
 }
 
-export default createExpressApp;
-export { rooms, expressApp };
+module.exports = {
+    createExpressApp,
+    rooms, 
+    expressApp 
+};
+// // export default createExpressApp;
+// export { };

@@ -20,7 +20,7 @@ const Logger = require("./lib/Logger");
 const Room = require("./lib/Room");
 const interactiveServer = require("./lib/interactiveServer");
 const interactiveClient = require("./lib/interactiveClient");
-const createExpressApp, {rooms, expressApp} = require("./room");
+const {createExpressApp, rooms, expressApp} = require("./room");
 
 const logger = new Logger();
 
