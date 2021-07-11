@@ -3,7 +3,7 @@
 process.title = "mediasoup-demo-server";
 process.env.DEBUG = process.env.DEBUG || "*INFO* *WARN* *ERROR*";
 
-const config = require("./config");
+const config = require("../config");
 
 /* eslint-disable no-console */
 console.log("process.env.DEBUG:", process.env.DEBUG);
@@ -16,10 +16,10 @@ const url = require("url");
 const protoo = require("protoo-server");
 const mediasoup = require("mediasoup");
 const { AwaitQueue } = require("awaitqueue");
-const Logger = require("./lib/Logger");
-const Room = require("./lib/Room");
-const interactiveServer = require("./lib/interactiveServer");
-const interactiveClient = require("./lib/interactiveClient");
+const Logger = require("../lib/Logger");
+const Room = require("../lib/Room");
+const interactiveServer = require("../lib/interactiveServer");
+const interactiveClient = require("../lib/interactiveClient");
 const {createExpressApp, rooms, expressApp} = require("./room");
 
 const logger = new Logger();
