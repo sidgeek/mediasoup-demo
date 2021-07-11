@@ -10,7 +10,7 @@ WORKDIR /service
 
 COPY package.json .
 RUN npm install
-COPY server.js .
+COPY server server
 COPY config.js .
 COPY lib lib
 COPY certs certs
