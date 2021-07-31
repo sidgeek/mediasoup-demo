@@ -15,4 +15,4 @@ COPY config.js .
 COPY lib lib
 COPY certs certs
 
-CMD ["node", "/service/server/index.js"]
+CMD ["node", "--inspect-brk", "/service/server/index.js"]
